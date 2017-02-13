@@ -4,9 +4,11 @@ Process video clips into format for optimal processing
 Path to do this:
 use avconv to cut clips and figure out how to capture the correct areas then write clips and write script for this then figure out how to run a batch process on kunth 
 
-Bellow are the cordinates and output values for each video. These were found by taking a screen capture form Avconv and then passing that screen shoot to python where scikit learn and matplot lib were used to convert the picture (.jpg) to a plot where the x,y pixle cordinates were vieable at any given point. Next I located the cordinates for the right most nest entance. Using the cordinates and some basic graph theory I then derived the arguments for avconv to process the video to extract the 6 nest entances.  
+Bellow are the cordinates and output values for each video. These were found by taking a screen capture form Avconv and then passing that screen shoot to python where scikit learn and matplot lib were used to convert the picture (.jpg) to a plot where the x,y pixle cordinates were vieable at any given point. Next I located the cordinates for the right most nest entance. Using the cordinates and some basic graph theory I then derived the arguments for avconv to process the video to extract the 6 nest entances. 
 
-Cordinates:
+(/diagram00.jpg) 
+
+### Cordinates:
 ```
 	I:
 		A: 
@@ -46,7 +48,7 @@ Cordinates:
 	IV:
 		NA
 ```
-Commands
+### Commands:
 
 ```
 I:
