@@ -8,6 +8,8 @@ Bellow are the cordinates and output values for each video. These were found by 
 
 (/diagram00.jpg) 
 
+
+
 ### Cordinates:
 ```
 	I:
