@@ -2,15 +2,15 @@
 Process video clips into format for optimal processing
 
 Path to do this:
-use avconv to cut clips and figure out how to capture the correct areas then write clips and write script for this then figure out how to run a batch process on kunth 
+use avconv to cut clips and figure out how to capture the correct areas then write clips and write script for this then figure out how to run a batch process on server EC2, knuth, ect.
 
-Bellow are the cordinates and output values for each video. These were found by taking a screen capture form Avconv and then passing that screen shoot to python where scikit learn and matplot lib were used to convert the picture (.jpg) to a plot where the x,y pixle cordinates were vieable at any given point. Next I located the cordinates for the right most nest entance. Using the cordinates and some basic graph theory I then derived the arguments for avconv to process the video to extract the 6 nest entances. 
+Bellow are the coordinates and output values for each video. These were found by taking a screen capture form Avconv and then passing that screen shoot to python where scikit learn and matplot lib were used to convert the picture (.jpg) to a plot where the x,y pixel coordinates were viewable at any given point. Next I located the coordinates for the right most nest entrance. Using the coordinates and some basic graph theory I then derived the arguments for avconv to process the video to extract the 6 nest entrances. 
 
 ![Ant ecosystem](/diagram00.jpg) 
 
 
 
-### Cordinates:
+### Coordinates:
 ```
 	I:
 		A: 
@@ -68,3 +68,16 @@ III:
 IV:
 	NA
 ```
+
+### Use:
+
+This script is designed to take in a path to a file. It will then create a directory Out-(filename) in this directory there will be 6 .avi video files each of these will contain a video of the nest entrance for there respective entrances. The naming convention for these files is Out_(region)-(Nest) Where Region refers to the quadrant the nest is located and Nest references to the A or B marker assigned in the above diagram. 
+
+
+
+
+
+
+
+
+
