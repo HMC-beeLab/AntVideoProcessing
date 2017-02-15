@@ -81,10 +81,9 @@ Now we can execute the script now execute it:
 ```sh getNestEntrances.sh /Users/alasdairjohnson/code/AntVideoProcessing/shorttest.avi```
 
 we can see above there are three components for execution we will look at them in order:
-	
-	```sh``` - this reference to the fact we are running a shell script
-	```getNestEntrances.sh``` - this is the script to be executed
-	```/Users/alasdairjohnson/code/AntVideoProcessing/shorttest.avi``` - is the path to the desired file to convert 
+```sh``` - this reference to the fact we are running a shell script
+```getNestEntrances.sh``` - this is the script to be executed
+```/Users/alasdairjohnson/code/AntVideoProcessing/shorttest.avi``` - is the path to the desired file to convert 
 
 
 
