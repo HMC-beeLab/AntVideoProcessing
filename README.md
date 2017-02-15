@@ -74,16 +74,16 @@ IV:
 This script is designed to take in a path to a file. It will then create a directory Out-(filename) in this directory there will be 6 .avi video files each of these will contain a video of the nest entrance for there respective entrances. The naming convention for these files is Out_(region)-(Nest) Where Region refers to the quadrant the nest is located and Nest references to the A or B marker assigned in the above diagram. 
 
 ## Example:
-	Do the following one time to give script permission to run.
-	chmod -x getNestEntrances.sh
+Do the following one time to give script permission to run.
+```chmod -x getNestEntrances.sh```
 
-	Now we can execute the script now execute it:
-	sh getNestEntrances.sh /Users/alasdairjohnson/code/AntVideoProcessing/shorttest.avi
+Now we can execute the script now execute it:
+```sh getNestEntrances.sh /Users/alasdairjohnson/code/AntVideoProcessing/shorttest.avi```
 
-	we can see above there are three components for execution we will look at them in order:
-		sh - this reference to the fact we are running a shell script
-		getNestEntrances.sh - this is the script to be executed
-		/Users/alasdairjohnson/code/AntVideoProcessing/shorttest.avi - is the path to the desired file to convert 
+we can see above there are three components for execution we will look at them in order:
+	sh - this reference to the fact we are running a shell script
+	getNestEntrances.sh - this is the script to be executed
+	/Users/alasdairjohnson/code/AntVideoProcessing/shorttest.avi - is the path to the desired file to convert 
 
 
 
