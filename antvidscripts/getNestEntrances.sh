@@ -3,8 +3,8 @@
 # echo "Hello this is a script to take an ant video and turn it into a video displaying only the entrances to the nest"
 # echo "Please enter the path of the file you would like to convert:"
 # read path_to_vid
-echo $1
-echo "$(< $1)"
+# echo $1
+# echo "$(< $1)"
 # echo "read"
 
 # while IFS=',' read col1 col2
@@ -12,14 +12,14 @@ echo "$(< $1)"
 #     echo "I got:$col1|$col2"
 # done < $1
 
-variable="$(< $1)"
-	for i in $(echo $variable | sed "s/,/ /g")
-	do
-	    # call your procedure/other scripts here below
-        arr=(${line//,/ })
-        echo $arr[0]
-	    echo "$i"
-	done
+# variable="$(< $1)"
+# 	for i in $(echo $variable | sed "s/,/ /g")
+# 	do
+# 	    # call your procedure/other scripts here below
+#         arr=(${line//,/ })
+#         echo $arr[0]
+# 	    echo "$i"
+# 	done
 
 # while IFS= read -r line;do
 #     fields=($(printf "%s" "$line"|cut -d',' --output-delimiter=' ' -f1-))
