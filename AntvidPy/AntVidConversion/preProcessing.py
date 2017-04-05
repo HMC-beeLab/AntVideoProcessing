@@ -70,7 +70,7 @@ class DivideVid():
                     self.cmd['inputPath'] = cleanPath + '/' +vidFile #set paths
                     self.cmd['outPath'] = outPath # Sets output path
 
-
+                    # subprocess.Popen(' '.join(self.convertCMD()))
                     # print(self.cmd)
                     subprocess.call(self.convertCMD())# execute the crop comant
 
