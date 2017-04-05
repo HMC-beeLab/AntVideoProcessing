@@ -60,18 +60,11 @@ class DivideVid():
             for vidFile in files_in_dir:#itterate over each file
                 zones = [1,2,3,4,5,6]
                 for zone in zones:
-                    # print(data)
                     self.addCropingArgs(zone, data) # will set the area to be croped
-
-
                     outname = "out_"+ self.headers[zone-1][:-2]+ "_" + os.path.basename(vidFile) #create out-filename
-                    # print(outname)
                     outPath =  cleanPath + '/out/' + outname# create path to out dir for out file
                     self.cmd['inputPath'] = cleanPath + '/' +vidFile #set paths
                     self.cmd['outPath'] = outPath # Sets output path
-
-                    # subprocess.Popen(' '.join(self.convertCMD()))
-                    # print(self.cmd)
                     subprocess.call(self.convertCMD())# execute the crop comant
 
     def convertCMD(self):
